@@ -1,7 +1,15 @@
 :root {
     --header-link-color: #2196F3;
     --title-text-color: #ffffff;
-
+    --hero-btn-color: #2196F3;
+    --accent-color: #ffffff;
+    --hero-bg-color: #2F303A;
+    --team-bg-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
+    --logo-first-color: #000000;
+    --logo-second-color: #2196F3;
+    --header-list-color: #212121;
+    --header-contact-color: #757575;
 }
 
 body {
@@ -21,7 +29,18 @@ body {
     margin: -1px;
   }
 
-.logo {
+.link {
+    text-decoration: none;
+}
+
+/*-------------------HEADER-------------------*/
+
+
+.header {
+    background-color: var(--accent-color);
+}
+
+.header-logo {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -30,9 +49,72 @@ body {
     color: var(--header-link-color);
 }
 
+.header-list {
+    list-style-type: none;
+    color: var(--header-list-color);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+    color: var(--header-link-color);
+}
+
+.header-info {
+    list-style-type: none;
+    color: var(--header-contact-color);
+
+}
+
+.logo {
+    color:var(--logo-first-color) ;
+}
+
+.logo-p1 {
+    color: var(--logo-second-color);
+}
+
+/*-------------------HERO-------------------*/
+
+
+.hero {
+    background-color: var(--hero-bg-color);
+}
+
 .hero-title {
     color: var(--title-text-color);
 }
 
+.hero-button {
+    background-color: var(--hero-btn-color);
+    color: var(--accent-color);
+
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    border-radius: 4px;
+}
 
 
+/*-------------------ОСОБЕННОСТИ-------------------*/
+
+
+.peculiarities {
+    background-color: var(--accent-color);
+}
+
+
+/*-------------------TEAM-------------------*/
+
+
+.team {
+    background-color:var(--team-bg-color);
+}
+
+
+/*-------------------FOOTER-------------------*/
+
+
+.footer {
+    background-color: var(--footer-bg-color);
+}
