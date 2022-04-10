@@ -265,10 +265,18 @@ body {
     letter-spacing: 0.06em;
 }
 
-.project-info {
+.project-style {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--sub-text-color);
+}
+
+.project-info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
 }
