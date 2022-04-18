@@ -36,6 +36,16 @@ body {
     text-decoration: none;
 }
 
+ul,
+ol {
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /*-------------------HEADER-------------------*/
 
 
@@ -43,18 +53,33 @@ body {
     
 }
 
+
 .logo {
     font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
     color:var(--logo-first-color) ;
 }
 
 .logo-fp {
     color: var(--accent-second-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
     font-family: 'Raleway', sans-serif;
 }
 
 .header-link:hover,
 .header-link:focus {
+    color: var(--accent-second-color);
+}
+
+.studio-link,
+.portfolio-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--accent-second-color);
 }
 
@@ -66,12 +91,10 @@ body {
 }
 
 .header-list {
-    list-style-type: none;
     color: var(--header-text-color);
 }
 
 .header-info {
-    list-style-type: none;
     color: var(--sub-text-color);
 }
 
@@ -93,6 +116,7 @@ body {
 
 
 .hero {
+    text-align: center;
     background-color: var(--hero-bg-color);
 }
 
@@ -101,20 +125,30 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     
 }
 
+.hero-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .hero-button {
+    font-family: 'Roboto';
     width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
     border-radius: 4px;
+    border: var(--accent-second-color);
     background-color: var(--accent-second-color);
     color: var(--accent-color);
+    padding: 10px 32px;
     cursor: pointer;
 }
 
@@ -127,16 +161,24 @@ body {
 }
 
 .peculiarities-list {
-    list-style-type: none;
+
 }
 
 .peculiarities-title {
+    width: 270px;
+    height: 16px;
+    left: 215px;
+    top: 774px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 
 .peculiarities-info {
+    width: 270px;
+    height: 75px;
+    left: 215px;
+    top: 800px;
     line-height: 1.71;
     color: var(--sub-text-color);
 }
@@ -157,7 +199,7 @@ body {
 }
 
 .skills-list {
-    list-style-type: none;
+
 }
 
 
@@ -176,7 +218,7 @@ body {
 }
 
 .team-list {
-    list-style-type: none;
+
 }
 
 .master {
@@ -200,7 +242,7 @@ body {
 }
 
 .footer-list {
-    list-style-type: none;
+
 }
 
 .footer-map {
@@ -223,7 +265,7 @@ body {
 }
 
 .projects-buttons-list {
-    list-style-type: none;
+
 }
 
 .projects-button:hover,
@@ -233,13 +275,22 @@ body {
 }
 
 .projects-button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
     background-color: var(--portfolio-btn-color);
+    border: var(--accent-second-color);
     border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    padding: 6px 22px;
     cursor: pointer;
 }
 
 .projects-list {
-    list-style-type: none;
+
 }
 
 .project-name {
@@ -247,6 +298,7 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--accent-text-color);
 }
 
 .project-style {
